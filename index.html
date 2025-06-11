@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieTime - Home</title>
+    <!-- Verbindt met de Bootstrap CSS voor styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header met navigatie en logo -->
+    <header>
+        <!-- Hamburger menu knop -->
+        <button class="navbar-toggler btn btn-outline-secondary" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <a href="index.html">
+                <img src="8014040.png" alt="MovieTime Logo">
+            </a>
+        </div>
+        <!-- Navigatie links -->
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="vestigingenpagina.html" class="nav-link">Vestigingen</a>
+            <a href="recensiepagina.html" class="nav-link">Recensies</a>
+            <a href="filmoverzicht.html" class="nav-link">Filmoverzicht</a>
+        </nav>
+    </header>
+
+    <!-- Hero section met welkomstboodschap -->
+    <div class="hero-section">
+        <h1>Welkom bij MovieTime</h1>
+        <p>Dé plek waar filmliefhebbers samenkomen om de nieuwste films te ontdekken en hun mening te delen!</p>
+        <div class="button-section">
+            <a href="filmoverzicht.html" class="btn btn-primary">Bekijk Films</a>
+            <a href="vestigingenpagina.html" class="btn btn-primary">Onze Vestigingen</a>
+        </div>
+    </div>
+
+    <!-- Feature-sectie met beschrijvingen -->
+    <div class="features-section">
+        <div class="feature-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Onze Vestigingen</h3>
+            <p>Bezoek een van onze luxe vestigingen verspreid door heel Nederland en geniet van de nieuwste films in een comfortabele omgeving.</p>
+            <a href="vestigingenpagina.html" class="btn btn-primary">Vestigingen</a>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-star"></i>
+            <h3>Recensies</h3>
+            <p>Lees wat anderen vinden van de nieuwste films en deel jouw eigen ervaring. Jouw mening telt bij MovieTime!</p>
+            <a href="recensiepagina.html" class="btn btn-primary">Recensies</a>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-tags"></i>
+            <h3>Speciale Aanbiedingen</h3>
+            <p>Profiteer van exclusieve kortingen en speciale evenementen. Bij MovieTime is elke filmavond een bijzondere ervaring!</p>
+            <a href="#" class="btn btn-primary">Aanbiedingen</a>
+        </div>
+    </div>
+
+    <!-- Footer sectie -->
+    <footer>
+        <p>&copy; 2025 MovieTime. Alle rechten voorbehouden.</p>
+    </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

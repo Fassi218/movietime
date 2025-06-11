@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensies - MovieTime</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header met logo en navigatie -->
+    <header>
+        <button class="navbar-toggler" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <a href="index.html">
+                <img src="8014040.png" alt="MovieTime Logo">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="vestigingenpagina.html" class="nav-link">Vestigingen</a>
+            <a href="recensiepagina.html" class="nav-link">Recensies</a>
+            <a href="filmoverzicht.html" class="nav-link">Filmoverzicht</a>
+        </nav>
+    </header>
+
+    <!-- Paginatitel -->
+    <h1 class="page-title">Film Recensies</h1>
+
+    <!-- Promotiebanner -->
+    <div class="header-message">
+        <i class="fas fa-ticket-alt"></i> Geef jouw mening en krijg korting op je volgende bezoek!
+    </div>
+
+    <!-- Hoofdcontainer met twee panelen -->
+    <div class="main-container">
+        <div class="left-panel">
+            <h2>Kies een vestiging</h2>
+            <select id="location-select" class="form-control mb-4" onchange="loadLocation()">
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="Rotterdam">Rotterdam</option>
+                <option value="Utrecht">Utrecht</option>
+                <option value="Den Haag">Den Haag</option>
+                <option value="Eindhoven">Eindhoven</option>
+            </select>
+
+            <h2>Films in deze vestiging</h2>
+
+            <div id="movies-container">
+                <!-- Filmkaarten worden hier dynamisch toegevoegd via JavaScript -->
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h2>Jouw recensies</h2>
+
+            <div id="reviews-container">
+                <!-- Recensiekaarten worden hier dynamisch toegevoegd via JavaScript -->
+            </div>
+
+            <div class="review-summary">
+                <p id="review-count">Aantal recensies: 0</p>
+                <p id="discount" style="display: none;"><i class="fas fa-gift"></i> Jouw korting: 10%</p>
+                <p id="discount-code" style="display: none;">Kortingscode: <strong>MOVIE10</strong></p>
+            </div>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

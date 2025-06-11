@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestigingen - MovieTime</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header met logo en navigatie - buiten de container voor volledige breedte -->
+    <header class="d-flex align-items-center">
+        <!-- Hamburger-menu knop voor mobiele weergave -->
+        <button class="navbar-toggler btn btn-outline-secondary" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Logo van de website -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="8014040.png" alt="MovieTime Logo">
+            </a>
+        </div>
+
+        <!-- Navigatiemenu -->
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="vestigingenpagina.html" class="nav-link">Vestigingen</a>
+            <a href="recensiepagina.html" class="nav-link">Recensies</a>
+            <a href="filmoverzicht.html" class="nav-link">Filmoverzicht</a>
+        </nav>
+    </header>
+
+    <!-- Wrapper voor volledige breedte -->
+    <div class="wrapper">
+        <!-- Container voor de inhoud van de pagina -->
+        <div class="container">
+            
+            <!-- Titel van de pagina -->
+            <h1 class="page-title">Onze Vestigingen</h1>
+
+            <!-- Zoekveld om vestigingen te filteren -->
+            <div class="search-container">
+                <input type="text" id="search" class="form-control" placeholder="Zoek vestiging..." onkeyup="filterLocations()">
+            </div>
+
+            <!-- Lijst van vestigingen -->
+            <div class="row" id="locations">
+                <div class="contact-card">
+                    <h5>MovieTime Amsterdam</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Kalverstraat 1, 1011 AA Amsterdam</p>
+                    <p><i class="fas fa-phone"></i> 020 1234123</p>
+                    <p><i class="fas fa-envelope"></i> amsterdam@movietime.nl</p>
+                </div>
+                <div class="contact-card">
+                    <h5>MovieTime Amstelveen</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Stadsplein 2, 1122 BB Amstelveen</p>
+                    <p><i class="fas fa-phone"></i> 020 4321321</p>
+                    <p><i class="fas fa-envelope"></i> amstelveen@movietime.nl</p>
+                </div>
+                <div class="contact-card">
+                    <h5>MovieTime Haarlem</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Zijlstraat 3, 2033 CC Haarlem</p>
+                    <p><i class="fas fa-phone"></i> 023 7654321</p>
+                    <p><i class="fas fa-envelope"></i> haarlem@movietime.nl</p>
+                </div>
+                <div class="contact-card">
+                    <h5>MovieTime Utrecht</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Neude 4, 3544 DD Utrecht</p>
+                    <p><i class="fas fa-phone"></i> 030 8877665</p>
+                    <p><i class="fas fa-envelope"></i> utrecht@movietime.nl</p>
+                </div>
+                <div class="contact-card">
+                    <h5>MovieTime Groningen</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Heerenstraat 5, 3544 DD Groningen</p>
+                    <p><i class="fas fa-phone"></i> 050 8877665</p>
+                    <p><i class="fas fa-envelope"></i> groningen@movietime.nl</p>
+                </div>
+                <div class="contact-card">
+                    <h5>MovieTime Maastricht</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Vrijthof 6, 3544 DD Maastricht</p>
+                    <p><i class="fas fa-phone"></i> 043 8877665</p>
+                    <p><i class="fas fa-envelope"></i> maastricht@movietime.nl</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
